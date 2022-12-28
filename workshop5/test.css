@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&family=Unbounded:wght@200;400;700&display=swap");
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.content-wrapper{
+    width: 100%;
+    background-color: rgb(109,151,115);
+    padding: 5%;
+    color: white;
+    height: 100vh;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 1.1;
+    margin-left: 30px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bolder;
+}
+
+h2{
+    margin-left: 50%;
+    font-weight: 300;
+}
+
+figure{
+    width: 50%;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
