@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    font-size: 50px;
+    color: purple;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    text-shadow: 10px 10px 1px pink;
+    text-align: center;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(4, 211, 226);
+}
+.grid-container {
+    display: grid;
+    grid-template-rows: 150px 150px;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 90%;
+    margin: 50px auto;
+    border: 5px solid black;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+}
+
+.grid1{
+    background-color: aqua;
+
+}
+.grid2{
+    background-color: rgb(130, 8, 141);
+
+}
+.grid3{
+    background-color: rgb(230, 197, 12);
+
+}
+.grid4{
+    background-color: rgb(236, 13, 13);
+
+}
+.grid5{
+    background-color: rgb(114, 2, 64);
+
+}
+.grid6{
+    background-color: rgb(3, 151, 40);
+
+}
