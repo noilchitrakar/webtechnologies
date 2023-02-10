@@ -1,0 +1,135 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgb(0,38,60);
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    /* border: 10px solid; */
+    position: sticky;
+    top:0;
+    display: flex;
+    flex-wrap: wrap;
+    direction: column;
+    /* direction: column; */
+    justify-content: space-between;
+    /* justify-content: space-evenly; */
+    width: 100%;
+    padding: 10px 50px;
+    align-items: center;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul li{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 10px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: rgb(255,209,0);
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active
+{
+    color:rgb(0,38,60);
+    background-color: rgb(255,209,0);
+    transition: 0.5s;
+    /* box-shadow: 0 0 10px #eeeeee, 0 0 40px #ffffff, 0 0 80px #ffffff; */
+}
+
+.logo{
+    /* color: rgb(217,217,217); */
+    font-size: 30px;
+    /* text-decoration: none; */
+    font-family: 'Poppins', sans-serif;
+}
+.lofo,a{
+    text-decoration: none;
+    color: white;
+}
+.second{
+    display: flex;
+    direction: column;
+}
+
+.content{
+    position: relative;
+    margin-top: 200px;
+    margin-left:20px;
+    color:  white;
+    line-height: 40px;
+}
+
+.all{
+    margin-top: 10px;
+    font-weight: 300;
+    line-height: 20px;
+}
+.toogle-button{
+    position: absolute;
+    margin-top: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    display: none;
+}
+.toogle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+@media only screen and (min-width:200px) and (max-width:767px){
+    .toogle-button{
+        display: flex;
+    }
+    .navlist{
+        width: 100%;
+        display: none;
+    }
+
+    .navbar{
+        flex-direction: column;
+        /* align-items: flex-start; */
+    }
+
+    .navlist ul{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navlist ul li{
+        text-align: center;
+    }
+    .navlist li a{
+        line-height: 30px;
+    }
+
+    .navlist.active{
+        display: flex;
+    }
+}
+

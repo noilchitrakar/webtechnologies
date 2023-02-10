@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgb(0,38,60);
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    position: sticky;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 50px;
+    align-items: center;
+    background-color:  rgb(0,38,60);
+    border-radius: 0px 0px 30px 30px;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul li{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 10px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: rgb(255,209,0);
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active
+{
+    color:rgb(0,38,60);
+    background-color: rgb(255,209,0);
+    transition: 0.5s;
+    /* box-shadow: 0 0 10px #eeeeee, 0 0 40px #ffffff, 0 0 80px #ffffff; */
+}
+/* .navbar ul li a.active{
+    color:rgb(0,38,60);
+    background-color: rgb(255,209,0);
+} */
+
+.logo{
+    /* color: rgb(217,217,217); */
+    font-size: 30px;
+    /* text-decoration: none; */
+    font-family: 'Poppins', sans-serif;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+.toogle-button{
+    position: absolute;
+    margin-top: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    display: none;
+}
+.toogle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/************************************************************** new block */
+
+#start{
+    /* position: relative; */
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0,38,60);
+    padding-top: 15%;
+    padding-left: 20px;
+}
+
+/* .content{
+    position: relative;
+    margin-left:10px;
+    color:  rgb(217,217,217);
+    line-height: 40px;
+} */
+
+.head span{
+    font-size: 50px;
+    color:rgb(255,209,0);    
+}
+.para span{
+    font-size: 30px;
+    color: aquamarine;
+}
+
+h1{
+    color: aliceblue;
+    font-size: 30px;
+}
+
+.para{
+    color: aliceblue;
+    font-size: 20px;
+}
+
+
+#second{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0,38,60);
+    display: flex;
+    direction: row;
+    /* justify-content: center; */
+    
+}
+.noil{
+    /* position: relative; */
+    padding :20px;
+    font-size: 20px;
+    color: aliceblue;
+    line-height: 40px;
+}
+
+.noil a{
+    text-decoration: none;
+    color: white;
+}
+
+#third{
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    color: white;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .fampic{
+    size: 100cm;
+    color: black;
+} */
+
+
+
+@media only screen and (min-width:200px) and (max-width:767px){
+    #second{
+        width: 100%;
+        flex-direction: column;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+    }
+    .toogle-button{
+        display: flex;
+    }
+    .navlist{
+        width: 100%;
+        display: none;
+    }
+
+    .navbar{
+        flex-direction: column;
+        /* align-items: flex-start; */
+    }
+
+    .navlist ul{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navlist ul li{
+        text-align: center;
+    }
+    .navlist li a{
+        line-height: 30px;
+    }
+
+    .navlist.active{
+        display: flex;
+    }
+}
